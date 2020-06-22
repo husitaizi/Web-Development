@@ -26,14 +26,19 @@ var gameOver = false;
 function resetGame() {
 
     // TODO: document this code from class
+    // Set all the cells from position numbers to empty.
     for (i = 0; i < board.length; i++) {
         board[i].innerHTML = "";
     }
 
     // TODO reset player back to X and update it on the page
-
+    // Set the player to "X", the game is designed as X always go first.
+    document.getElementById("player").innerHTML = "X";
 
     // TODO reset gameOver and # of empty cells
+    // Initialize the number of empty cells to 9 and set gameOver to false so the game is on. 
+    gameOver = false;
+    empty = 9;
 
 }
 
