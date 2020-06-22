@@ -1,4 +1,8 @@
-/* ChuantaiHu */
+/* 
+ * Author: Chuantai Hu
+ Assignmeng_2
+ version: Jun 21, 2020.
+ */
 
 // TODO document this
 var board = document.getElementsByTagName("td");
