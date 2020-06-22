@@ -1,0 +1,42 @@
+<!-- main content -->
+<header>
+    <link rel="stylesheet" type="text/css" href="css/TicTacToeA2.css">
+    <script type ="text/javascript" src ="js/TicTacToeA2.js"></script>
+    <h1>Tic Tac Toe!</h1>
+</header>
+
+<!-- game board -->
+<table>
+    <tr>
+        <td onclick="cellClicked(board[0])">0</td>
+        <td onclick="cellClicked(board[1])">1</td>
+        <td onclick="cellClicked(board[2])">2</td>
+    </tr>
+    <tr>
+        <td onclick="cellClicked(board[3])">3</td>
+        <td onclick="cellClicked(board[4])">4</td>
+        <td onclick="cellClicked(board[5])">5</td>
+    </tr>
+    <tr>
+        <td onclick="cellClicked(board[6])">6</td>
+        <td onclick="cellClicked(board[7])">7</td>
+        <td onclick="cellClicked(board[8])">8</td>
+    </tr>
+</table>
+
+<!-- play information and controls -->
+<p>Player <span id="player">X</span> Go!
+    <button id="reset" onclick="resetGame()" >Reset Game</button>
+</p>
+
+<!-- footer -->
+<footer>ChuantaiHu @ Sheridan SYST10199 Web Programming
+</footer>
+1
+<!-- hidden elements used for displaying results -->
+<div id="message">
+    <p>GAME OVER!</p>
+    <h3 id="winner"></h3>
+    <p>&mdash;click anywhere in the box to dismiss this message&mdash;</p>
+</div>
+<div id="overlay"></div>
